@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solutions — CREDIT by Eduplex Solutions</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>✉️ csr@eduplex.in</span>
+      <span>📞 83370 56594</span>
+      <span>🕒 Mon - Sat: 9:30 AM - 6:30 PM</span>
+    </div>
+    <div class="topbar-right">
+      <a href="/login.html">Demo Login</a>
+      <a href="support.html">Support</a>
+      <a href="support.html">Partner Program</a>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpeg" alt="CREDIT logo" class="brand-logo-img">
+      <div class="brand-text"><div class="name">CREDIT</div><div class="sub">by Eduplex Solutions</div></div>
+    </a>
+    <ul class="nav-links">
+      <li><a class="link" href="index.html">Home</a></li>
+      <li><a class="link" href="index.html#features">Features</a></li>
+      <li class="active"><a class="link" href="solutions.html">Solutions</a></li>
+      <li><a class="link" href="index.html#platform">Apps</a></li>
+      <li><a class="link" href="index.html#rewards">Rewards</a></li>
+      <li><a class="link" href="pricing.html">Pricing</a></li>
+      <li><a class="link" href="contact.html">Contact</a></li>
+      <li><a class="link" href="support.html">Support</a></li>
+      <li><a class="link" href="about.html">About Us</a></li>
+    </ul>
+    <button class="btn btn-primary" id="navBookDemoBtn">Book Live Demo</button>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="badge">SOLUTIONS</span>
+      <h2 style="margin-top:14px;">One platform, tailored to how you teach</h2>
+      <p>CREDIT adapts its credit rules, house structure, and reward catalog to how your institution actually runs.</p>
+    </div>
+
+    <div class="platform-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="platform-card">
+        <h4>🏫 Schools</h4>
+        <p style="color:var(--muted); font-size:13.5px; margin:0 0 12px;">K-12 discipline, house points, and parent engagement.</p>
+        <ul>
+          <li>Class &amp; house-wise credit tracking</li>
+          <li>Real-time parent notifications</li>
+          <li>Attendance-linked credit rules</li>
+          <li>Age-appropriate reward catalog</li>
+        </ul>
+      </div>
+      <div class="platform-card">
+        <h4>🎓 Colleges</h4>
+        <p style="color:var(--muted); font-size:13.5px; margin:0 0 12px;">Department-wise engagement and co-curricular tracking.</p>
+        <ul>
+          <li>Department &amp; batch-wise leaderboards</li>
+          <li>Co-curricular &amp; event participation credits</li>
+          <li>Faculty activity reporting</li>
+          <li>Placement-readiness style recognition</li>
+        </ul>
+      </div>
+      <div class="platform-card">
+        <h4>📚 Coaching Institutes</h4>
+        <p style="color:var(--muted); font-size:13.5px; margin:0 0 12px;">Test performance, punctuality, and streaks that keep students coming back.</p>
+        <ul>
+          <li>Test-score &amp; streak-based credits</li>
+          <li>Batch-wise leaderboards</li>
+          <li>Parent updates on test performance</li>
+          <li>Fast reward redemption for retention</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="cta-banner" style="background:linear-gradient(135deg, var(--purple-dark), var(--blue));">
+      <h2>Tell us about your institution</h2>
+      <p>We'll show you exactly how CREDIT would work for your setup in a live demo.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary" style="background:#fff;color:var(--purple-dark);" id="solutionsBookDemoBtn">📅 Book a Live Demo</button>
+        <a class="btn btn-outline" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.5);" href="contact.html">✉️ Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  © 2026 CREDIT by Eduplex Solutions. All data shown is retrieved live from the CREDIT database. |
+  <a href="about.html" style="color:#cfd3e8;">About</a> · <a href="support.html" style="color:#cfd3e8;">Support</a> · <a href="pricing.html" style="color:#cfd3e8;">Pricing</a>
+</footer>
+
+<!-- Lead capture modal -->
+<div class="modal-overlay" id="leadModal">
+  <div class="modal-box">
+    <button class="modal-close" id="leadModalClose">✕</button>
+    <h2 id="leadModalTitle">Book a Live Demo</h2>
+    <p class="modal-sub" id="leadModalSub">Tell us a bit about your school and we'll get in touch to schedule your demo.</p>
+    <form id="leadForm">
+      <div class="field"><label>Full Name *</label><input type="text" id="leadName" required></div>
+      <div class="field"><label>Phone *</label><input type="tel" id="leadPhone" required></div>
+      <div class="field"><label>Email *</label><input type="email" id="leadEmail" required></div>
+      <div class="field"><label>Organization Name *</label><input type="text" id="leadOrg" required></div>
+      <div class="field"><label>Address *</label><textarea id="leadAddress" rows="3" required></textarea></div>
+      <button type="submit" class="btn btn-primary" id="leadSubmitBtn">Submit</button>
+      <div class="lead-msg" id="leadMsg"></div>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('solutionsBookDemoBtn')?.addEventListener('click', () => openLeadModal('demo'));
+</script>
+</body>
+</html>

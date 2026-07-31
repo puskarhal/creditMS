@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CREDIT by Eduplex Solutions — Student Credit &amp; Reward Management System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>✉️ csr@eduplex.in</span>
+      <span>📞 83370 56594</span>
+      <span>🕒 Mon - Sat: 9:30 AM - 6:30 PM</span>
+    </div>
+    <div class="topbar-right">
+      <a href="/login.html">Demo Login</a>
+      <a href="support.html">Support</a>
+      <a href="support.html">Partner Program</a>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="brand">
+      <img src="images/logo.jpeg" alt="CREDIT logo" class="brand-logo-img">
+      <div class="brand-text">
+        <div class="name">CREDIT</div>
+        <div class="sub">by Eduplex Solutions</div>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li class="active"><a class="link" href="#">Home</a></li>
+      <li><a class="link" href="#features">Features</a></li>
+      <li><a class="link" href="solutions.html">Solutions</a></li>
+      <li><a class="link" href="#platform">Apps</a></li>
+      <li><a class="link" href="#rewards">Rewards</a></li>
+      <li><a class="link" href="pricing.html">Pricing</a></li>
+      <li><a class="link" href="contact.html">Contact</a></li>
+      <li><a class="link" href="support.html">Support</a></li>
+      <li><a class="link" href="about.html">About Us</a></li>
+    </ul>
+    <button class="btn btn-primary" id="navBookDemoBtn">Book Live Demo</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="badge">#1 STUDENT CREDIT &amp; REWARD MANAGEMENT SYSTEM</span>
+      <h1>Recognize. Reward.<br><span class="accent">Inspire.<span class="underline"></span></span></h1>
+      <p class="lead">Transform student behaviours into measurable achievements with digital credit points that motivate students, empower teachers and engage parents.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary" id="heroBookDemoBtn">📅 Book a Live Demo</button>
+        <button class="btn btn-outline" id="heroStartPilotBtn">🚀 Start 45-Day Free Pilot</button>
+      </div>
+      <div class="hero-trust">
+        <div class="avatars">
+          <img src="https://i.pravatar.cc/64?img=12" alt="">
+          <img src="https://i.pravatar.cc/64?img=32" alt="">
+          <img src="https://i.pravatar.cc/64?img=45" alt="">
+        </div>
+        <span>Trusted by 500+ Schools Across India</span>
+        <span class="stars">★★★★★</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="mock-frame">
+        <div class="mock-sidebar">
+          <div class="mbrand">✦ CREDIT</div>
+          <div class="mock-nav-item active">▦ Dashboard</div>
+          <div class="mock-nav-item">👥 Students</div>
+          <div class="mock-nav-item">⭐ Credits</div>
+          <div class="mock-nav-item">🎁 Rewards</div>
+          <div class="mock-nav-item">🏠 House Points</div>
+          <div class="mock-nav-item">📄 Reports</div>
+          <div class="mock-nav-item">📈 Analytics</div>
+          <div class="mock-nav-item">👤 Users</div>
+          <div class="mock-nav-item">⚙️ Settings</div>
+        </div>
+        <div class="mock-main">
+          <div class="mock-topline">
+            <h4>Dashboard</h4>
+            <span class="mock-school-pill">Greenfield International School ▾</span>
+          </div>
+          <div class="mock-stats" id="mockStats">
+            <div class="mock-stat"><div class="label">Total Students</div><div class="value" data-field="totalStudents">–</div><div class="delta">live</div></div>
+            <div class="mock-stat"><div class="label">Credits Issued</div><div class="value" data-field="creditsIssued">–</div><div class="delta">live</div></div>
+            <div class="mock-stat"><div class="label">Rewards Redeemed</div><div class="value" data-field="rewardsRedeemed">–</div><div class="delta">live</div></div>
+            <div class="mock-stat"><div class="label">Active Teachers</div><div class="value" data-field="activeTeachers">–</div><div class="delta">live</div></div>
+          </div>
+          <div class="mock-panels">
+            <div class="mock-panel">
+              <h5>House Leaderboard</h5>
+              <div id="mockHouses">Loading…</div>
+            </div>
+            <div class="mock-panel">
+              <h5>Credit Trend</h5>
+              <svg class="trend-line" viewBox="0 0 200 90" preserveAspectRatio="none">
+                <polyline points="0,70 30,55 60,60 90,35 120,45 150,20 180,28" fill="none" stroke="#6d4bf0" stroke-width="3"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phones">
+        <div class="phone p1"><div class="screen"><div class="phone-head">Teacher App<br><b>Welcome, Mrs. Sharma 👋</b></div>
+          <div class="phone-card" style="background:#efeafd;color:#5936e8;font-weight:700;">Award Credit — give credit points to students</div>
+        </div></div>
+        <div class="phone p2"><div class="screen"><div class="phone-head">Hi, Aarav! 👋<br>Keep earning, keep shining!</div>
+          <div class="phone-card" style="background:#f4f2ff;"><span class="phone-total">320</span><br>Your Credits</div>
+        </div></div>
+        <div class="phone p3"><div class="screen"><div class="phone-head">Parent App<br><b>Hello, Parent 👋</b></div>
+          <div class="phone-card" style="background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;"><span class="phone-total">320</span><br>Total Credits</div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="features">
+  <div class="container">
+    <h2>Why Schools Choose Credit Management System</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#efeafd;color:#6d4bf0;">🛡️</div>
+        <h3>Improves Discipline</h3>
+        <p>Encourages positive behaviour &amp; reduces misconduct.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e7f8ee;color:#16a34a;">📈</div>
+        <h3>Increases Participation</h3>
+        <p>Boosts student engagement in school activities.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#fff3e0;color:#ca8a04;">🏆</div>
+        <h3>Motivates Students</h3>
+        <p>Recognition drives confidence and self-esteem.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#e6f7f8;color:#0891b2;">📊</div>
+        <h3>Data-Driven Insights</h3>
+        <p>AI analytics help schools make informed decisions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-strip">
+  <div class="container" id="publicStats">
+    <div class="stat-item"><div class="stat-icon">🏫</div><div><div class="num" data-field="schools">–</div><div class="lbl">Schools</div></div></div>
+    <div class="stat-item"><div class="stat-icon">👥</div><div><div class="num" data-field="students">–</div><div class="lbl">Students</div></div></div>
+    <div class="stat-item"><div class="stat-icon">⭐</div><div><div class="num" data-field="creditsIssued">–</div><div class="lbl">Credits Issued</div></div></div>
+    <div class="stat-item"><div class="stat-icon">🎁</div><div><div class="num" data-field="rewardsRedeemed">–</div><div class="lbl">Rewards Redeemed</div></div></div>
+    <div class="stat-item"><div class="stat-icon">📈</div><div><div class="num" data-field="teacherSatisfactionPct">–</div><div class="lbl">Teacher Satisfaction</div></div></div>
+  </div>
+</section>
+
+<!-- Product Highlights -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Product Highlights</span>
+      <h2>Everything a school needs to run credits &amp; rewards</h2>
+    </div>
+    <div class="highlight-grid">
+      <div class="highlight-card"><div class="hi-icon">⚡</div><div class="hi-text">Award Credit Points in Seconds</div></div>
+      <div class="highlight-card"><div class="hi-icon">📲</div><div class="hi-text">Real-Time Parent Notifications</div></div>
+      <div class="highlight-card"><div class="hi-icon">🎁</div><div class="hi-text">Digital Reward Store</div></div>
+      <div class="highlight-card"><div class="hi-icon">🏠</div><div class="hi-text">House Competition Dashboard</div></div>
+      <div class="highlight-card"><div class="hi-icon">📒</div><div class="hi-text">Student Credit Ledger</div></div>
+      <div class="highlight-card"><div class="hi-icon">🎯</div><div class="hi-text">Behaviour &amp; Achievement Tracking</div></div>
+      <div class="highlight-card"><div class="hi-icon">🤖</div><div class="hi-text">AI-Powered Analytics</div></div>
+      <div class="highlight-card"><div class="hi-icon">🔗</div><div class="hi-text">Integrated with ClassAI ERP</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits by role -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Built For Everyone In Your School</span>
+      <h2>Benefits for every stakeholder</h2>
+    </div>
+    <div class="role-tabs" id="roleTabs">
+      <button class="role-tab active" data-role="principals">For Principals</button>
+      <button class="role-tab" data-role="teachers">For Teachers</button>
+      <button class="role-tab" data-role="students">For Students</button>
+      <button class="role-tab" data-role="parents">For Parents</button>
+    </div>
+    <div class="role-panel active" data-role-panel="principals">
+      <ul>
+        <li>Improve discipline school-wide</li>
+        <li>Increase attendance</li>
+        <li>Encourage participation in school activities</li>
+        <li>Make data-driven decisions with live reports</li>
+      </ul>
+    </div>
+    <div class="role-panel" data-role-panel="teachers">
+      <ul>
+        <li>Award points instantly, right from the classroom</li>
+        <li>Manage house competitions with live leaderboards</li>
+        <li>Monitor student progress at a glance</li>
+      </ul>
+    </div>
+    <div class="role-panel" data-role-panel="students">
+      <ul>
+        <li>Earn recognition for good behaviour and achievement</li>
+        <li>Redeem rewards from the school's reward store</li>
+        <li>Track achievements over time</li>
+      </ul>
+    </div>
+    <div class="role-panel" data-role-panel="parents">
+      <ul>
+        <li>Stay informed with real-time notifications</li>
+        <li>Celebrate your child's milestones</li>
+        <li>Encourage positive habits at home</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Reward Marketplace -->
+<section class="section" id="rewards">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Reward Marketplace</span>
+      <h2>Turn credit points into things students actually want</h2>
+      <p>A live sample from our demo school's reward catalog — every school configures its own store.</p>
+    </div>
+    <div class="reward-grid" id="rewardGrid">
+      <div class="reward-card"><div class="reward-emoji">⏳</div><div><div class="rname">Loading rewards…</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Student Journey -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2>The student journey</h2>
+    </div>
+    <div class="journey-row">
+      <span class="journey-step">Positive Behaviour</span><span class="journey-arrow">→</span>
+      <span class="journey-step">Teacher Awards Credit</span><span class="journey-arrow">→</span>
+      <span class="journey-step">Instant Notification</span><span class="journey-arrow">→</span>
+      <span class="journey-step">Parent Update</span><span class="journey-arrow">→</span>
+      <span class="journey-step">Leaderboard Ranking</span><span class="journey-arrow">→</span>
+      <span class="journey-step">Reward Redemption</span><span class="journey-arrow">→</span>
+      <span class="journey-step">Certificate &amp; Recognition</span>
+    </div>
+  </div>
+</section>
+
+<!-- Platform Overview -->
+<section class="section" id="platform">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Platform Overview</span>
+      <h2>One system, four experiences</h2>
+    </div>
+    <div class="platform-grid">
+      <div class="platform-card"><h4>👩‍🏫 Teacher App</h4><ul>
+        <li>Award Credits</li><li>View Ledgers</li><li>House Points</li><li>Quick Search</li>
+      </ul></div>
+      <div class="platform-card"><h4>🎓 Student App</h4><ul>
+        <li>Credit Wallet</li><li>Redeem Rewards</li><li>Achievements</li><li>Leaderboard</li>
+      </ul></div>
+      <div class="platform-card"><h4>👪 Parent App</h4><ul>
+        <li>Notifications</li><li>Progress Reports</li><li>Reward History</li><li>School Announcements</li>
+      </ul></div>
+      <div class="platform-card"><h4>🖥️ Admin Portal</h4><ul>
+        <li>Dashboard</li><li>Reports</li><li>Reward Management</li><li>Credit Rules</li><li>User Management</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- AI Analytics -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">AI Analytics</span>
+      <h2>Insights that help schools act, not just report</h2>
+    </div>
+    <div class="analytics-grid">
+      <div class="analytics-item">📊 Behaviour Trends</div>
+      <div class="analytics-item">🔥 Student Engagement Score</div>
+      <div class="analytics-item">📅 Attendance vs Credit Analysis</div>
+      <div class="analytics-item">🏆 Top Performers</div>
+      <div class="analytics-item">⚠️ At-Risk Student Identification</div>
+      <div class="analytics-item">🎁 Reward Utilization Insights</div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="section" id="pricing-preview">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>Simple plans that scale with your school</h2>
+      <p>Need something custom? <a href="contact.html" style="color:var(--purple-dark); font-weight:700;">Talk to us</a>.</p>
+    </div>
+    <div class="pricing-grid" id="pricingGrid">
+      <div class="price-card"><h3>Loading plans…</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- 45-Day Pilot -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="pilot-box">
+      <div>
+        <span class="badge">45-DAY FREE PILOT</span>
+        <h2 style="margin:14px 0 10px; font-size:24px;">Try it risk-free, with your own teachers and students</h2>
+        <p style="color:var(--muted); margin:0 0 20px;">See real results before you commit — fully set up and supported by our team.</p>
+        <button class="btn btn-primary" id="pilotSectionBtn">🚀 Start 45-Day Free Pilot</button>
+      </div>
+      <ul>
+        <li>Up to 5 Teachers</li>
+        <li>Up to 50 Students</li>
+        <li>Cloud Hosting</li>
+        <li>Full Admin Portal</li>
+        <li>Mobile Apps</li>
+        <li>Online Training</li>
+        <li>WhatsApp Support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Success Stories</span>
+      <h2>What schools are saying</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card"><div class="quote">"Our discipline referrals dropped and participation in school events went up within the first term of using CREDIT."</div><div class="who">— Principal, Partner School</div></div>
+      <div class="testi-card"><div class="quote">"Awarding points takes seconds between classes, and parents love getting instant updates."</div><div class="who">— Class Teacher, Partner School</div></div>
+      <div class="testi-card"><div class="quote">"I check my leaderboard rank every day now — it's fun to see my house win!"</div><div class="who">— Student, Partner School</div></div>
+    </div>
+    <p class="testi-note">Sample quotes shown for illustration — ask us for real references from schools using CREDIT.</p>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Ready to recognize, reward, and inspire your students?</h2>
+      <p>Book a live demo or start your 45-day free pilot today — no credit card required.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary" id="ctaBookDemoBtn">📅 Book a Live Demo</button>
+        <button class="btn btn-outline" id="ctaStartPilotBtn" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.35);">🚀 Start 45-Day Free Pilot</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  © 2026 CREDIT by Eduplex Solutions. All data shown is retrieved live from the CREDIT database. |
+  <a href="about.html" style="color:#cfd3e8;">About</a> · <a href="support.html" style="color:#cfd3e8;">Support</a> · <a href="pricing.html" style="color:#cfd3e8;">Pricing</a> · <a href="contact.html" style="color:#cfd3e8;">Contact</a>
+</footer>
+
+<!-- Lead capture modal: shared by "Book a Live Demo" and "Start 45-Day Free Pilot" -->
+<div class="modal-overlay" id="leadModal">
+  <div class="modal-box">
+    <button class="modal-close" id="leadModalClose">✕</button>
+    <h2 id="leadModalTitle">Book a Live Demo</h2>
+    <p class="modal-sub" id="leadModalSub">Tell us a bit about your school and we'll get in touch to schedule your demo.</p>
+    <form id="leadForm">
+      <div class="field"><label>Full Name *</label><input type="text" id="leadName" required></div>
+      <div class="field"><label>Phone *</label><input type="tel" id="leadPhone" required></div>
+      <div class="field"><label>Email *</label><input type="email" id="leadEmail" required></div>
+      <div class="field"><label>Organization Name *</label><input type="text" id="leadOrg" required></div>
+      <div class="field"><label>Address *</label><textarea id="leadAddress" rows="3" required></textarea></div>
+      <button type="submit" class="btn btn-primary" id="leadSubmitBtn">Submit</button>
+      <div class="lead-msg" id="leadMsg"></div>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

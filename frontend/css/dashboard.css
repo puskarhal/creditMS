@@ -1,0 +1,65 @@
+body.dash { background: #f6f7fb; }
+.app-shell { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+
+.sidebar { background: #0f1b3d; color: #cfd3e8; padding: 22px 16px; }
+.sidebar .brand { color: #fff; font-weight: 800; font-size: 18px; display:flex; align-items:center; gap:10px; padding: 6px 10px 26px; }
+.side-item {
+  display: flex; align-items: center; gap: 10px; padding: 11px 12px; border-radius: 10px;
+  font-size: 14px; font-weight: 600; color: #b9bedb; cursor: pointer; margin-bottom: 3px;
+}
+.side-item:hover { background: rgba(255,255,255,.06); color: #fff; }
+.side-item.active { background: linear-gradient(135deg, var(--purple), var(--purple-dark)); color: #fff; }
+.side-icon { width: 18px; text-align: center; }
+
+.main-area { padding: 26px 32px; }
+.topline { display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px; }
+.topline h1 { font-size: 22px; margin: 0; }
+.userchip { display: flex; align-items: center; gap: 10px; font-size: 13.5px; font-weight: 600; }
+.userchip .avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--purple); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; }
+.logout-btn { font-size: 12.5px; color: var(--muted); border: 1px solid var(--line); background:#fff; padding: 7px 12px; border-radius: 8px; }
+
+.stat-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 20px; }
+.stat-card { background:#fff; border:1px solid var(--line); border-radius: 14px; padding: 18px; }
+.stat-card .label { font-size: 12px; color: var(--muted); font-weight: 700; text-transform: uppercase; }
+.stat-card .value { font-size: 26px; font-weight: 800; margin: 8px 0 4px; }
+.stat-card .delta { font-size: 12px; color: var(--green); font-weight: 700; }
+
+.grid-2 { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; align-items: start; }
+.panel { background:#fff; border:1px solid var(--line); border-radius: 14px; padding: 18px; margin-bottom: 16px; }
+.panel h3 { margin: 0 0 14px; font-size: 15px; display: flex; align-items: center; justify-content: space-between; }
+.panel-sub { font-size: 11.5px; font-weight: 700; color: var(--purple-dark); background: #efeafd; padding: 4px 10px; border-radius: 999px; }
+
+.status-bar-row { display: grid; grid-template-columns: 92px 1fr 30px; align-items: center; gap: 10px; margin-bottom: 14px; }
+.status-bar-row:last-child { margin-bottom: 0; }
+.status-bar-label { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--ink); }
+.status-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.status-bar-track { height: 10px; border-radius: 999px; background: #eef0f7; overflow: hidden; }
+.status-bar-fill { height: 100%; border-radius: 999px; transition: width .3s ease; }
+.status-bar-count { font-size: 13.5px; font-weight: 800; text-align: right; }
+
+@media (max-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-size: 11.5px; text-transform: uppercase; font-weight: 700; }
+.pill { display:inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11.5px; font-weight: 700; }
+.pill.green { background:#e7f8ee; color:#16a34a; }
+.pill.yellow { background:#fff3e0; color:#ca8a04; }
+.pill.red { background:#fde8e8; color:#dc2626; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+.form-row.full { grid-template-columns: 1fr; }
+.form-row input, .form-row select, .form-row textarea {
+  width: 100%; padding: 10px 12px; border: 1.5px solid var(--line); border-radius: 8px; font-size: 13.5px; font-family: inherit;
+}
+.toolbar { display:flex; gap:10px; margin-bottom:16px; flex-wrap: wrap; }
+.toolbar input, .toolbar select { padding: 9px 12px; border:1.5px solid var(--line); border-radius:8px; font-size:13.5px; }
+.small-btn { padding: 8px 14px; font-size: 13px; border-radius: 8px; }
+.house-row { display:flex; align-items:center; gap:10px; margin-bottom:10px; font-size:13.5px; }
+.house-dot { width:10px; height:10px; border-radius:50%; }
+.house-row .name { flex:1; color: var(--muted); }
+.house-row .pts { font-weight:800; }
+
+.empty { color: var(--muted); font-size: 13.5px; padding: 20px 0; text-align: center; }

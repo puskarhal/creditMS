@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — CREDIT by Eduplex Solutions</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .contact-wrap { display: grid; grid-template-columns: 1fr 1.3fr; gap: 30px; align-items: start; }
+  .contact-info-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 30px; }
+  .contact-info-card h3 { margin: 0 0 16px; font-size: 16px; }
+  .contact-info-card .row { display: flex; gap: 12px; margin-bottom: 16px; font-size: 14px; }
+  .contact-info-card .row .ic { font-size: 18px; }
+  @media (max-width: 900px) { .contact-wrap { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>✉️ csr@eduplex.in</span>
+      <span>📞 83370 56594</span>
+      <span>🕒 Mon - Sat: 9:30 AM - 6:30 PM</span>
+    </div>
+    <div class="topbar-right">
+      <a href="/login.html">Demo Login</a>
+      <a href="support.html">Support</a>
+      <a href="support.html">Partner Program</a>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpeg" alt="CREDIT logo" class="brand-logo-img">
+      <div class="brand-text"><div class="name">CREDIT</div><div class="sub">by Eduplex Solutions</div></div>
+    </a>
+    <ul class="nav-links">
+      <li><a class="link" href="index.html">Home</a></li>
+      <li><a class="link" href="index.html#features">Features</a></li>
+      <li><a class="link" href="solutions.html">Solutions</a></li>
+      <li><a class="link" href="index.html#platform">Apps</a></li>
+      <li><a class="link" href="index.html#rewards">Rewards</a></li>
+      <li><a class="link" href="pricing.html">Pricing</a></li>
+      <li class="active"><a class="link" href="contact.html">Contact</a></li>
+      <li><a class="link" href="support.html">Support</a></li>
+      <li><a class="link" href="about.html">About Us</a></li>
+    </ul>
+    <button class="btn btn-primary" id="navBookDemoBtn">Book Live Demo</button>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="badge">CONTACT US</span>
+      <h2 style="margin-top:14px;">Let's talk about your school</h2>
+      <p>Fill this in and our team will get back to you — usually within one business day.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-info-card">
+        <h3>Call for Support</h3>
+        <div class="row"><span class="ic">📞</span><span>+91 83370 56594</span></div>
+        <div class="row"><span class="ic">✉️</span><span>contacts@eduplex.in</span></div>
+        <h3 style="margin-top:24px;">Location</h3>
+        <div class="row"><span class="ic">📍</span><span>1/298 Baishnabghata Patuli Township Block S, Kolkata, W.B, India — Pin 700094</span></div>
+        <h3 style="margin-top:24px;">Prefer a quick call?</h3>
+        <button class="btn btn-primary" id="contactBookDemoBtn" style="width:100%;">📅 Book a Live Demo Instead</button>
+      </div>
+
+      <div class="form-page" style="margin:0;">
+        <form id="contactForm">
+          <div class="form-row-2">
+            <div class="field"><label>School / Organization Name *</label><input type="text" id="cSchoolName" required></div>
+            <div class="field"><label>Contact Person *</label><input type="text" id="cContactPerson" required></div>
+          </div>
+          <div class="form-row-2">
+            <div class="field"><label>Designation</label><input type="text" id="cDesignation" placeholder="e.g. Principal, Admin"></div>
+            <div class="field"><label>Number of Students</label><input type="text" id="cStudentCount" placeholder="e.g. 500"></div>
+          </div>
+          <div class="form-row-2">
+            <div class="field"><label>Email *</label><input type="email" id="cEmail" required></div>
+            <div class="field"><label>Mobile *</label><input type="tel" id="cPhone" required></div>
+          </div>
+          <div class="field"><label>City / State</label><input type="text" id="cCityState" placeholder="e.g. Kolkata, West Bengal"></div>
+          <div class="field"><label>Message</label><textarea id="cMessage" rows="4" placeholder="Tell us a bit about what you're looking for..."></textarea></div>
+          <button type="submit" class="btn btn-primary" id="contactSubmitBtn" style="width:100%;">Send Message</button>
+          <div class="lead-msg" id="contactMsg"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  © 2026 CREDIT by Eduplex Solutions. All data shown is retrieved live from the CREDIT database. |
+  <a href="about.html" style="color:#cfd3e8;">About</a> · <a href="support.html" style="color:#cfd3e8;">Support</a> · <a href="pricing.html" style="color:#cfd3e8;">Pricing</a>
+</footer>
+
+<!-- Lead capture modal (for the "Book a Live Demo Instead" shortcut) -->
+<div class="modal-overlay" id="leadModal">
+  <div class="modal-box">
+    <button class="modal-close" id="leadModalClose">✕</button>
+    <h2 id="leadModalTitle">Book a Live Demo</h2>
+    <p class="modal-sub" id="leadModalSub">Tell us a bit about your school and we'll get in touch to schedule your demo.</p>
+    <form id="leadForm">
+      <div class="field"><label>Full Name *</label><input type="text" id="leadName" required></div>
+      <div class="field"><label>Phone *</label><input type="tel" id="leadPhone" required></div>
+      <div class="field"><label>Email *</label><input type="email" id="leadEmail" required></div>
+      <div class="field"><label>Organization Name *</label><input type="text" id="leadOrg" required></div>
+      <div class="field"><label>Address *</label><textarea id="leadAddress" rows="3" required></textarea></div>
+      <button type="submit" class="btn btn-primary" id="leadSubmitBtn">Submit</button>
+      <div class="lead-msg" id="leadMsg"></div>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('contactBookDemoBtn')?.addEventListener('click', () => openLeadModal('demo'));
+
+  document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const msgEl = document.getElementById('contactMsg');
+    msgEl.textContent = ''; msgEl.className = 'lead-msg';
+    const payload = {
+      school_name: document.getElementById('cSchoolName').value.trim(),
+      contact_person: document.getElementById('cContactPerson').value.trim(),
+      designation: document.getElementById('cDesignation').value.trim(),
+      email: document.getElementById('cEmail').value.trim(),
+      phone: document.getElementById('cPhone').value.trim(),
+      student_count: document.getElementById('cStudentCount').value.trim(),
+      city_state: document.getElementById('cCityState').value.trim(),
+      message: document.getElementById('cMessage').value.trim()
+    };
+    try {
+      const res = await fetch('/api/public/contact', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Submission failed');
+      msgEl.textContent = "Thanks! We've received your message and will be in touch soon.";
+      msgEl.className = 'lead-msg success';
+      document.getElementById('contactForm').reset();
+    } catch (err) {
+      msgEl.textContent = err.message;
+      msgEl.className = 'lead-msg error';
+    }
+  });
+</script>
+</body>
+</html>

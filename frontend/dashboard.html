@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — CREDIT</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dash">
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><img src="images/logo.jpeg" alt="CREDIT" style="width:28px;height:28px;object-fit:contain;border-radius:6px;"> CREDIT</div>
+    <div class="side-item" data-view="dashboard"><span class="side-icon">▦</span> Dashboard</div>
+    <div class="side-item" data-view="leadsmessages"><span class="side-icon">📥</span> Leads &amp; Messages</div>
+  </aside>
+
+  <main class="main-area">
+    <div class="topline">
+      <h1 id="viewTitle">Dashboard</h1>
+      <div class="userchip">
+        <div class="avatar" id="userInitial">?</div>
+        <span id="userName">–</span>
+        <button class="logout-btn" id="logoutBtn">Log out</button>
+      </div>
+    </div>
+    <div id="viewContent"><div class="empty">Loading…</div></div>
+  </main>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

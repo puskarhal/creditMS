@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login — CREDIT</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  body { display:flex; align-items:center; justify-content:center; min-height:100vh; background:linear-gradient(135deg,#f6f7fb,#eee9fd); }
+  .login-card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:40px; width:380px; box-shadow:0 30px 60px -30px rgba(20,20,60,.25); }
+  .login-card .brand { justify-content:center; margin-bottom:6px; }
+  .login-card h2 { text-align:center; margin: 14px 0 4px; }
+  .login-card p.sub { text-align:center; color:var(--muted); font-size:13.5px; margin:0 0 22px; }
+  .field { margin-bottom:16px; }
+  .field label { display:block; font-size:13px; font-weight:700; margin-bottom:6px; }
+  .field input { width:100%; padding:11px 12px; border:1.5px solid var(--line); border-radius:9px; font-size:14px; }
+  .field input:focus { outline:none; border-color:var(--purple); }
+  .login-card button { width:100%; padding:13px; margin-top:6px; }
+  .error-msg { color:var(--red); font-size:13px; margin-top:10px; text-align:center; display:none; }
+  .demo-hint { margin-top:20px; font-size:12px; color:var(--muted); background:#f8f8fc; border-radius:8px; padding:10px 12px; line-height:1.6; }
+  .back-link { display:block; text-align:center; margin-top:16px; font-size:13px; color:var(--purple-dark); font-weight:700; }
+</style>
+</head>
+<body>
+  <div class="login-card">
+    <div class="brand" style="justify-content:center; margin-bottom:6px;">
+      <img src="images/logo.jpeg" alt="CREDIT logo" class="brand-logo-img">
+    </div>
+    <h2>Welcome back</h2>
+    <p class="sub">Sign in to your CREDIT dashboard</p>
+    <form id="loginForm">
+      <div class="field"><label>Email</label><input type="email" id="email" required placeholder="you@school.edu"></div>
+      <div class="field"><label>Password</label><input type="password" id="password" required placeholder="••••••••"></div>
+      <button class="btn btn-primary" type="submit">Sign In</button>
+      <div class="error-msg" id="errorMsg"></div>
+    </form>
+    <div class="demo-hint">
+      This dashboard is for the ESPL admin/sales team only.<br>
+      Demo admin login (created by the seed script):<br>
+      admin@greenfield.edu / Admin@123
+    </div>
+    <a class="back-link" href="/">← Back to homepage</a>
+  </div>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const errorEl = document.getElementById('errorMsg');
+  errorEl.style.display = 'none';
+  try {
+    const res = await fetch('/api/auth/login', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Login failed');
+    localStorage.setItem('credit_token', data.token);
+    localStorage.setItem('credit_user', JSON.stringify(data.user));
+    window.location.href = '/dashboard.html';
+  } catch (err) {
+    errorEl.textContent = err.message;
+    errorEl.style.display = 'block';
+  }
+});
+</script>
+</body>
+</html>
